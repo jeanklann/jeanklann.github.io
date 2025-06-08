@@ -1,0 +1,202 @@
+@import 'curriculo';
+
+.curriculo-classico-container {
+  position: relative;
+  top: 0px;
+  width: 100vw;
+  padding-bottom: 50px;
+}
+.curriculo-classico { 
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: var(--color-background);
+ color: var(--color-default);
+ line-height: 1;
+ padding: 20px;
+
+ position: relative;
+ top: 15px;
+ left: 0;
+ min-width: 900px;
+ width: 900px;
+ max-width: 900px;
+ min-height: 100%;
+ margin-left: calc(50% - 900px/2);
+ box-shadow: #333 0px 0px 10px;
+}
+.night .curriculo-classico {
+  box-shadow: #000 0px 0px 10px;
+}
+
+@media print {
+  .curriculo-classico-container {
+    position: relative;
+    top: 0px;
+    width: auto;
+  }
+  .curriculo-classico {
+    position: relative;
+    top: 0px;
+    left: 0;
+    min-width: 900px;
+    width: 900px;
+    max-width: 900px;
+    min-height: calc(100vh - 100px);
+    margin-left: auto;
+    box-shadow: none;
+    }
+
+  .night .curriculo-classico {
+    box-shadow: none;
+  }
+  .curriculo-classico .menu {  
+    display: none;
+  }
+}
+
+.curriculo-classico .menu {
+ position: absolute;
+ top: 10px;
+ right: 20px;
+ width: 600px;
+ float: right;
+}
+.curriculo-classico .menu button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: .8em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.curriculo-classico .menu button:hover {
+  background-color: var(--color-secondary);
+}
+
+.curriculo-classico .menu .menu-item {
+  display: block;
+  float: right;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.curriculo-classico .menu .switch-icon {
+ font-size: 1.2em;
+ margin: 5px;
+}
+.curriculo-classico .menu .switch-icon-mini {
+  display: inline-block;
+  font-size: .8em;
+  margin-top: 8px;
+}
+
+.curriculo-classico-linhas {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 30px;
+  text-align: right;
+  color: var(--color-lines);
+}
+
+.curriculo-classico-main {
+  margin-left: 20px;
+}
+
+.curriculo-classico .main-tag
+{
+  font-size: 4em;
+  font-weight: bold;
+}
+.curriculo-classico h2, .curriculo-classico h3 {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+.curriculo-classico h2 {
+  padding-top: 1em;
+  margin-bottom: 0em;
+  font-size: 1.8em;
+}
+.curriculo-classico h2 span, .curriculo-classico h3 span {
+  color: var(--color-secondary);
+}
+.curriculo-classico h3 {
+  padding-top: 2.5em;
+  margin-bottom: -2.5em;
+  font-size: 1em;
+}
+.curriculo-classico .contatos{
+  padding-left: 0px;
+}
+.curriculo-classico .titulo .nome {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.curriculo-classico .titulo .resumo {
+  font-size: 1.42em;
+  font-weight: bold;
+}
+
+
+.curriculo-classico .formacao .nome {
+  font-weight: bold;
+}
+.curriculo-classico .formacao .instituicao {
+  font-weight: normal;
+  font-size: .8em;
+}
+.curriculo-classico .formacao .formacao-item {
+  margin-bottom: 10px;
+}
+.curriculo-classico .periodo {
+  color: var(--color-secondary);
+  font-size: .8em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.curriculo-classico .cursos {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.curriculo-classico .curso-item {
+  margin-top: 42px;
+  padding-top: 0px;
+  font-size: .8em;
+}
+.curriculo-classico .experiencia .experiencia-item .nome {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.curriculo-classico .experiencia-adicional .experiencia-adicional-item .nome {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.curriculo-classico .experiencia .experiencia-item {
+  margin-bottom: 1em;
+}
+.curriculo-classico .col2
+{
+  position: absolute;
+  left: 40%;
+}
+.curriculo-classico .col3
+{
+  position: absolute;
+  left: 60%;
+  width: 40%;
+}
+.curriculo-classico .experiencia .habilidades .habilidade-item{
+  font-size: .8em;
+  
+}
+.curriculo-classico .experiencia .habilidades .habilidade-item .habilidade-titulo{
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.curriculo-classico .idiomas .idioma-item .fluencia {
+  font-size: .8em;
+}
