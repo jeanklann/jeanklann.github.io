@@ -6,11 +6,11 @@ export const formatDate = (date:Date) => {
     return date.toLocaleDateString('pt-BR', {month: '2-digit', year: 'numeric'});
 }
 
-export const formatPeriodoFunction = (language: linguas, valorPeriodo:periodo) => {
-    return (<>{formatDate(valorPeriodo.inicio)} - {valorPeriodo.fim ? formatDate(valorPeriodo.fim) : getTextFunction(language, palavrasPadroes.atual)}</>);
+export const formatPeriodo = (language: linguas, valorPeriodo:periodo) => {
+    return (<>{formatDate(valorPeriodo.inicio)} - {valorPeriodo.fim ? formatDate(valorPeriodo.fim) : getText(language, palavrasPadroes.atual)}</>);
 }
   
-export const getTextFunction = (language: linguas, text : texto) : string => {
+export const getText = (language: linguas, text : texto) : string => {
     if (language == "enUs" && text.enUs)
         return text.enUs;
     return text.ptBr;

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Switch from "react-switch";
 import {dados, palavrasPadroes } from '../dadosCurriculo.tsx'
-import { formatPeriodoFunction, getTextFunction } from '../Functions.tsx'
+import { formatPeriodo, getText } from '../Functions.tsx'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../scss/CurriculoInterativo.scss'
@@ -30,8 +30,7 @@ function CurriculoInterativo() {
     document.body.classList.toggle('night', !checked);
   }
 
-  const formatPeriodo = (valorPeriodo:periodo) => formatPeriodoFunction(language, valorPeriodo);
-  const getText = (text : texto) : string => getTextFunction(language, text);
+
 
   const toggleLanguage = (checked:boolean) => {
     if(checked){
@@ -50,7 +49,7 @@ function CurriculoInterativo() {
       <div ref={curriculoRef} className='curriculo-interativo'>
         <header className='curriculo-header'>
           <h1>{dados.nome}</h1>
-          <p className='curriculo-resumo'>{getText(dados.resumo)}</p>
+          <p className='curriculo-resumo'>{getText(language, dados.resumo)}</p>
           <div className='curriculo-contatos'>
             {dados.contatos.map((contato, index) => (
               <div key={index} className='contato-item'>
@@ -62,41 +61,41 @@ function CurriculoInterativo() {
         </header>
 
         <section className='curriculo-formacao'>
-          <h2>{getText(palavrasPadroes.formacao)}</h2>
+          <h2>{getText(language, palavrasPadroes.formacao)}</h2>
           {dados.formacao.map((formacao, index) => (
             <div key={index} className='formacao-item'>
               <h3>{formacao.instituicao}</h3>
-              <p>{getText(formacao.nome)}</p>
-              <span>{formatPeriodo(formacao.periodo)}</span>
+              <p>{getText(language, formacao.nome)}</p>
+              <span>{formatPeriodo(language, formacao.periodo)}</span>
             </div>
           ))}
         </section>
 
         <section className='curriculo-cursos'>
-          <h2>{getText(palavrasPadroes.cursos)}</h2>
+          <h2>{getText(language, palavrasPadroes.cursos)}</h2>
           {dados.cursos.map((curso, index) => (
             <div key={index} className='curso-item'>
               <h3>{curso.instituicao}</h3>
               {curso.nomes.map((nome, idx) => (
-                <p key={idx}>{getText(nome)}</p>
+                <p key={idx}>{getText(language, nome)}</p>
               ))}
             </div>
           ))}
         </section>
 
         <section className='curriculo-experiencia'>
-          <h2>{getText(palavrasPadroes.experiencia)}</h2>
+          <h2>{getText(language, palavrasPadroes.experiencia)}</h2>
           {dados.experienciaProfissional.map((experiencia, index) => (
             <div key={index} className='experiencia-item'>
               <h3>{experiencia.nomeEmpresa}</h3>
               {experiencia.cargos.map((cargo, idx) => (
                 <div key={idx} className='cargo-item'>
-                  <h4>{getText(cargo.nome)}</h4>
-                  <span>{formatPeriodo(cargo.periodo)}</span>
-                  <p>{getText(cargo.descricao)}</p>
+                  <h4>{getText(language, cargo.nome)}</h4>
+                  <span>{formatPeriodo(language, cargo.periodo)}</span>
+                  <p>{getText(language, cargo.descricao)}</p>
                   {cargo.habilidades.map((habilidade, hIdx) => (
                     <div key={hIdx} className='habilidade-item'>
-                      <strong>{getText(habilidade.nome)}:</strong>
+                      <strong>{getText(language, habilidade.nome)}:</strong>
                       <span>{habilidade.valores.join(', ')}</span>
                     </div>
                   ))}
