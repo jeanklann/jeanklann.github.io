@@ -1,6 +1,7 @@
 import { formatPeriodo, getText } from '../../Functions'
 import type { curriculo, linguas, palavras } from '../../tipos'
 import Habilidades from './Habilidades'
+import TituloSecao from './TituloSecao'
 
 type ExperienciasProps = {
     dados: curriculo,
@@ -11,7 +12,7 @@ type ExperienciasProps = {
 const Experiencias = (props: ExperienciasProps) => {
   return (
     <div className='experiencia'>
-        <h2><span>.</span>{getText(props.language, props.palavras.experiencia)}</h2>
+        <TituloSecao title={getText(props.language, props.palavras.experiencia)} />
         {props.dados.experienciaProfissional.map((experiencia, index) => (
             <>
             {experiencia.cargos.map((cargo, cargoIndex) => (

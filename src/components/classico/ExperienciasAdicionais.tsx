@@ -1,5 +1,6 @@
 import { formatPeriodo, getText } from '../../Functions'
 import type { curriculo, linguas, palavras } from '../../tipos'
+import TituloSecao from './TituloSecao'
 
 type ExperienciasAdicionaisProps = {
     dados: curriculo,
@@ -10,9 +11,9 @@ type ExperienciasAdicionaisProps = {
 const ExperienciasAdicionais = (props: ExperienciasAdicionaisProps) => {
   return (
     <div className='experiencia-adicional'>
-        <h2><span>.</span>{getText(props.language, props.palavras.experienciaAdicional)}</h2>
+        <TituloSecao title={getText(props.language, props.palavras.experienciaAdicional)} />
         {props.dados.experienciaProfissionalAdicional.map((experiencia, index) => (
-                <div key={index} className='experiencia-adicional-item'>
+            <div key={index} className='experiencia-adicional-item'>
                 <div className='cargo row'>
                     <div className='col-5'>
                         <div className='nome'>{getText(props.language, experiencia.titulo)}</div>
@@ -24,7 +25,7 @@ const ExperienciasAdicionais = (props: ExperienciasAdicionaisProps) => {
                     
                     <div className='descricao col-3 col3'>{getText(props.language, experiencia.descricao)}</div>
                 </div>
-                </div>
+            </div>
         ))}
     </div>
   )

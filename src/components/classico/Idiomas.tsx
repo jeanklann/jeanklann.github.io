@@ -1,5 +1,6 @@
 import type { idioma, linguas, palavras } from '../../tipos';
 import { getText } from '../../Functions';
+import TituloSecao from './TituloSecao';
 
 type IdiomasProps = {
     idiomas: idioma[];
@@ -10,7 +11,7 @@ type IdiomasProps = {
 const Idiomas = (props: IdiomasProps) => {
   return (
     <div className='idiomas row'>
-        <h2><span>.</span>{getText(props.language, props.palavras.idiomas)}</h2>
+        <TituloSecao title={getText(props.language, props.palavras.idiomas)} />
         {props.idiomas.map((idioma, index) => (
             <div key={index} className='idioma-item'>
             <div className='row'>
