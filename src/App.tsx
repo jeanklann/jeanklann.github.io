@@ -1,8 +1,8 @@
 import React from 'react'
-import CurriculoClassico from './CurriculoClassico.tsx'
-import CurriculoInterativo from './CurriculoInterativo.tsx'
+import CurriculoClassico from './components/CurriculoClassico.tsx'
+import CurriculoInterativo from './components/CurriculoInterativo.tsx'
 
-const Curriculo = () => {
+const App = () => {
     let params = new URLSearchParams(document.location.search);
     let modo = params.get("modo") ?? "interativo";
     if (modo === "classico") {
@@ -15,4 +15,4 @@ const Curriculo = () => {
   )
 }
 
-export default Curriculo
+export default App

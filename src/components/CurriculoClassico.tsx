@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import Switch from "react-switch";
 import QRCode from 'react-qr-code' 
-import { type linguas, type periodo, type texto } from './tipos.tsx'
-import {dados, palavrasPadroes } from './dadosCurriculo.tsx'
-import { formatPeriodoFunction, getTextFunction } from './Functions.tsx'
+import { type linguas, type periodo, type texto } from '../tipos.tsx'
+import {dados, palavrasPadroes } from '../dadosCurriculo.tsx'
+import { formatPeriodoFunction, getTextFunction } from '../Functions.tsx'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './CurriculoClassico.scss'
+import '../scss/CurriculoClassico.scss'
 
 function CurriculoClassico() {
   let params = new URLSearchParams(document.location.search);

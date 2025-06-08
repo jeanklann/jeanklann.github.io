@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import Switch from "react-switch";
-import {dados, palavrasPadroes } from './dadosCurriculo.tsx'
-import { formatPeriodoFunction, getTextFunction } from './Functions.tsx'
+import {dados, palavrasPadroes } from '../dadosCurriculo.tsx'
+import { formatPeriodoFunction, getTextFunction } from '../Functions.tsx'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './CurriculoInterativo.scss'
-import type { linguas, periodo, texto } from './tipos.tsx';
+import '../scss/CurriculoInterativo.scss'
+import type { linguas, periodo, texto } from '../tipos.tsx';
 
 function CurriculoInterativo() {
   let params = new URLSearchParams(document.location.search);
