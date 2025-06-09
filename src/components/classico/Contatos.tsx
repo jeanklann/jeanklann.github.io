@@ -1,7 +1,7 @@
-import type { curriculo } from '../../tipos'
+import type { Curriculo } from '../../tipos'
 
 type ContatosProps = {
-    dados: curriculo,
+    dados: Curriculo,
 }
 
 const Contatos = (props:ContatosProps) => {

@@ -1,9 +1,9 @@
-import type { cargo, linguas } from '../../tipos'
+import type { Cargo, Linguas } from '../../tipos'
 import { getText } from '../../Functions'
 
 type HabilidadesProps = {
-    cargo: cargo,
-    language: linguas,
+    cargo: Cargo,
+    language: Linguas,
 }
 
 const Habilidades = (props: HabilidadesProps) => {

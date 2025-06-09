@@ -1,11 +1,11 @@
 import { formatPeriodo, getText } from '../../Functions'
-import type { curriculo, linguas, palavras } from '../../tipos'
+import type { Curriculo, Linguas, Palavras } from '../../tipos'
 import TituloSecao from './TituloSecao'
 
 type ExperienciasAdicionaisProps = {
-    dados: curriculo,
-    language: linguas,
-    palavras: palavras
+    dados: Curriculo,
+    language: Linguas,
+    palavras: Palavras
 }
 
 const ExperienciasAdicionais = (props: ExperienciasAdicionaisProps) => {

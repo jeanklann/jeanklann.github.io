@@ -1,11 +1,11 @@
 import TituloSecao from './TituloSecao'
 import { getText } from '../../Functions'
-import type { curso, linguas, palavras } from '../../tipos'
+import type { Curso, Linguas, Palavras } from '../../tipos'
 
 type CursosProps = {
-    dados: curso[],
-    language: linguas,
-    palavras: palavras
+    dados: Curso[],
+    language: Linguas,
+    palavras: Palavras
 }
 
 const Cursos = (props:CursosProps) => {

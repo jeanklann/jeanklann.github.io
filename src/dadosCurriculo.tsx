@@ -1,6 +1,6 @@
-import type {curriculo, palavras} from './tipos.tsx';
+import type {Curriculo, Palavras} from './tipos.tsx';
 
-export const dados : curriculo = {
+export const DadosCurriculo : Curriculo = {
     nome: "Jean Carlos Klann",
     contatos: 
     [
@@ -130,7 +130,7 @@ export const dados : curriculo = {
     totalLinhas: {ptBr: 56, enUs: 55}, 
 };
 
-export const palavrasPadroes : palavras = {
+export const PalavrasPadroes : Palavras = {
   formacao: {ptBr: "formação", enUs: "education"},
   cursos: {ptBr: "cursosExtrasCurriculares", enUs: "extraCurricularCourses"},
   experiencia: {ptBr: "experiênciaProfissional", enUs: "professionalExperience"},

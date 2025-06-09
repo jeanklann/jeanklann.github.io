@@ -1,11 +1,11 @@
-import type { idioma, linguas, palavras } from '../../tipos';
+import type { Idioma, Linguas, Palavras } from '../../tipos';
 import { getText } from '../../Functions';
 import TituloSecao from './TituloSecao';
 
 type IdiomasProps = {
-    idiomas: idioma[];
-    palavras: palavras;
-    language: linguas;
+    idiomas: Idioma[];
+    palavras: Palavras;
+    language: Linguas;
 }
 
 const Idiomas = (props: IdiomasProps) => {

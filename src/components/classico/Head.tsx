@@ -1,13 +1,13 @@
-import type { curriculo, linguas, palavras } from '../../tipos'
+import type { Curriculo, Linguas, Palavras } from '../../tipos'
 import MainTag from './MainTag'
 import Name from './Name'
 import Contatos from './Contatos'
 import QRCode from 'react-qr-code'
 
 type HeadProps = {
-    dados: curriculo,
-    palavras: palavras,
-    language: linguas
+    dados: Curriculo,
+    palavras: Palavras,
+    language: Linguas
 }
 
 const Head = (props:HeadProps) => {

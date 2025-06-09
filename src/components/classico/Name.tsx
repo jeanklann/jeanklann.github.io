@@ -1,9 +1,9 @@
-import type { curriculo, linguas } from '../../tipos.tsx'
+import type { Curriculo, Linguas } from '../../tipos.tsx'
 import { getText } from '../../Functions.tsx'
 
 type NameProps = {
-    dados: curriculo,
-    language: linguas
+    dados: Curriculo,
+    language: Linguas
 }
 
 const Name = (props: NameProps) => {

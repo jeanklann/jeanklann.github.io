@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import Switch from "react-switch";
 import QRCode from 'react-qr-code' 
-import { type linguas } from '../tipos.tsx'
-import {dados, palavrasPadroes } from '../dadosCurriculo.tsx'
+import { type Linguas } from '../tipos.tsx'
+import {DadosCurriculo, PalavrasPadroes } from '../DadosCurriculo.tsx'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../scss/CurriculoClassico.scss'
@@ -16,7 +16,7 @@ import Idiomas from './classico/Idiomas.tsx';
 
 function CurriculoClassico() {
   let params = new URLSearchParams(document.location.search);
-  let defaultLanguage : linguas = params.get("lan") == "enUs" ? "enUs" : "ptBr";
+  let defaultLanguage : Linguas = params.get("lan") == "enUs" ? "enUs" : "ptBr";
   let defaultNightMode = params.get("night") ?? "0";
 
   const [language, setLanguage] = useState(defaultLanguage);
@@ -60,9 +60,9 @@ function CurriculoClassico() {
   
 
   const getLines = () => {
-    let lines = dados.totalLinhas.ptBr;
-    if(dados.totalLinhas[language])
-      lines = dados.totalLinhas[language];
+    let lines = DadosCurriculo.totalLinhas.ptBr;
+    if(DadosCurriculo.totalLinhas[language])
+      lines = DadosCurriculo.totalLinhas[language];
     
     return Array.from({ length: lines }).map((_, index) => (
                 <div key={index} className='linha'>{(index+1)}</div>
@@ -116,22 +116,22 @@ function CurriculoClassico() {
           <div className='row'>
             <div className='titulo col-5'>
               <MainTag openning={true} />
-              <Name dados={dados} language={language} />
+              <Name dados={DadosCurriculo} language={language} />
             </div>
             <div className='col-7 row col2' style={{marginTop: '30px'}}>
-              <Contatos dados={dados} />
+              <Contatos dados={DadosCurriculo} />
               <div className='qrCode col-2'>
                 <QRCode 
-                  value={dados.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor}
+                  value={DadosCurriculo.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor}
                   style={{maxHeight: '80px', maxWidth: '80px', marginBottom: '10px'}} />
               </div>
             </div>
           </div>
-          <Formacao dados={dados} language={language} palavras={palavrasPadroes} />
-          <Experiencias dados={dados} language={language} palavras={palavrasPadroes} />
-          <ExperienciasAdicionais dados={dados} language={language} palavras={palavrasPadroes} />
+          <Formacao dados={DadosCurriculo} language={language} palavras={PalavrasPadroes} />
+          <Experiencias dados={DadosCurriculo} language={language} palavras={PalavrasPadroes} />
+          <ExperienciasAdicionais dados={DadosCurriculo} language={language} palavras={PalavrasPadroes} />
 
-          <Idiomas idiomas={dados.idiomas} language={language} palavras={palavrasPadroes} />
+          <Idiomas idiomas={DadosCurriculo.idiomas} language={language} palavras={PalavrasPadroes} />
           <MainTag openning={false} />
           </div>
         </div>

@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import Switch from "react-switch";
-import {dados, palavrasPadroes } from '../dadosCurriculo.tsx'
+import {DadosCurriculo, PalavrasPadroes } from '../DadosCurriculo.tsx'
 import { formatPeriodo, getText } from '../Functions.tsx'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../scss/CurriculoInterativo.scss'
-import type { linguas, periodo, texto } from '../tipos.tsx';
+import type { Linguas, Periodo, Texto } from '../tipos.tsx';
+import Rellax from 'rellax';
 
 function CurriculoInterativo() {
   let params = new URLSearchParams(document.location.search);
-  let defaultLanguage : linguas = params.get("lan") == "enUs" ? "enUs" : "ptBr";
+  let defaultLanguage : Linguas = params.get("lan") == "enUs" ? "enUs" : "ptBr";
   let defaultNightMode = params.get("night") ?? "0";
 
   const [language, setLanguage] = useState(defaultLanguage);
@@ -17,8 +18,12 @@ function CurriculoInterativo() {
   const [nightMode, setNightMode] = useState(defaultNightMode != "1");
   const curriculoRef = useRef<HTMLDivElement>(null);
   const linhasRef = useRef<HTMLDivElement>(null);
-  const todosCursos = dados.cursos.map(curso => curso.nomes).flat();
+  const todosCursos = DadosCurriculo.cursos.map(curso => curso.nomes).flat();
 
+  useEffect(() => {
+    let relax = new Rellax(".curriculo-formacao");
+
+  }, []);
   useEffect(() => {
     if(defaultNightMode == "1")
       document.body.classList.toggle('night', true);
@@ -46,12 +51,12 @@ function CurriculoInterativo() {
 
   return (
     <div className="curriculo-interativo-container">
-      <div ref={curriculoRef} className='curriculo-interativo'>
+      <div ref={curriculoRef} className='curriculo-interativo rellax' data-rellax-speed="2">
         <header className='curriculo-header'>
-          <h1>{dados.nome}</h1>
-          <p className='curriculo-resumo'>{getText(language, dados.resumo)}</p>
+          <h1>{DadosCurriculo.nome}</h1>
+          <p className='curriculo-resumo'>{getText(language, DadosCurriculo.resumo)}</p>
           <div className='curriculo-contatos'>
-            {dados.contatos.map((contato, index) => (
+            {DadosCurriculo.contatos.map((contato, index) => (
               <div key={index} className='contato-item'>
                 <i className={contato.icone}></i>
                 <span>{contato.valor}</span>
@@ -61,8 +66,8 @@ function CurriculoInterativo() {
         </header>
 
         <section className='curriculo-formacao'>
-          <h2>{getText(language, palavrasPadroes.formacao)}</h2>
-          {dados.formacao.map((formacao, index) => (
+          <h2>{getText(language, PalavrasPadroes.formacao)}</h2>
+          {DadosCurriculo.formacao.map((formacao, index) => (
             <div key={index} className='formacao-item'>
               <h3>{formacao.instituicao}</h3>
               <p>{getText(language, formacao.nome)}</p>
@@ -72,8 +77,8 @@ function CurriculoInterativo() {
         </section>
 
         <section className='curriculo-cursos'>
-          <h2>{getText(language, palavrasPadroes.cursos)}</h2>
-          {dados.cursos.map((curso, index) => (
+          <h2>{getText(language, PalavrasPadroes.cursos)}</h2>
+          {DadosCurriculo.cursos.map((curso, index) => (
             <div key={index} className='curso-item'>
               <h3>{curso.instituicao}</h3>
               {curso.nomes.map((nome, idx) => (
@@ -84,8 +89,8 @@ function CurriculoInterativo() {
         </section>
 
         <section className='curriculo-experiencia'>
-          <h2>{getText(language, palavrasPadroes.experiencia)}</h2>
-          {dados.experienciaProfissional.map((experiencia, index) => (
+          <h2>{getText(language, PalavrasPadroes.experiencia)}</h2>
+          {DadosCurriculo.experienciaProfissional.map((experiencia, index) => (
             <div key={index} className='experiencia-item'>
               <h3>{experiencia.nomeEmpresa}</h3>
               {experiencia.cargos.map((cargo, idx) => (
