@@ -123,8 +123,8 @@
   color: var(--color-secondary);
 }
 .curriculo-classico h3 {
-  padding-top: 1.5em;
-  margin-bottom: -2.5em;
+  padding-top: 2em;
+  margin-bottom: -3em;
   font-size: 1em;
 }
 .curriculo-classico .contatos{
@@ -167,6 +167,10 @@
   font-size: .8em;
   font-style: italic;
   font-weight: bold;
+  margin-top: 5px;
+}
+.curriculo-classico .formacao .periodo {
+  margin-top: 3px;
 }
 
 .curriculo-classico .cursos {
@@ -176,7 +180,6 @@
 .curriculo-classico .curso-item {
   margin-top: 42px;
   padding-top: 0px;
-  font-size: .8em;
 }
 .curriculo-classico .experiencia .experiencia-item .nome {
   font-weight: bold;
@@ -185,6 +188,7 @@
 .curriculo-classico .experiencia-adicional .experiencia-adicional-item .nome {
   font-weight: bold;
   font-size: 1.2em;
+  width: 300px;
 }
 .curriculo-classico .experiencia .experiencia-item {
   margin-bottom: 1em;
@@ -196,10 +200,10 @@
 }
 .curriculo-classico .col3
 {
-  font-size: 1em;
+  font-size: .9em;
   position: absolute;
-  left: 60%;
-  width: 340px;
+  left: 55%;
+  width: 385px;
 }
 .curriculo-classico .experiencia .habilidades .habilidade-item{
   font-size: .8em;
