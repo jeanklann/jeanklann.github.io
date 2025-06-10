@@ -190,7 +190,7 @@ export const DadosCurriculo : Curriculo = {
       { lingua: {ptBr: "Inglês", enUs: "English"}, texto: {ptBr: "Compreende bem, lê bem, escreve bem e fala razoavelmente", enUs: "Can read, write, and speak"}},
     ],
     dataNascimento: new Date(1993, 3 - 1),
-    totalLinhas: {ptBr: 72, enUs: 71}, 
+    totalLinhas: {ptBr: 73, enUs: 71}, 
 };
 
 export const PalavrasPadroes : Palavras = {
