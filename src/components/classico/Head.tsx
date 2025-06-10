@@ -18,10 +18,10 @@ const Head = (props:HeadProps) => {
             <Name dados={props.dados} language={props.language} />
         </div>
         <div className='col-7 row col2' style={{marginTop: '30px'}}>
-            <Contatos dados={props.dados} />
+            <Contatos dados={props.dados} language={props.language} />
             <div className='qrCode col-2'>
             <QRCode 
-                value={props.dados.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor}
+                value={props.dados.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor.ptBr}
                 style={{maxHeight: '80px', maxWidth: '80px', marginBottom: '10px'}} />
             </div>
         </div>

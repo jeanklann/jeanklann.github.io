@@ -11,11 +11,11 @@ export const DadosCurriculo : Curriculo = {
     nome: "Jean Carlos Klann",
     contatos: 
     [
-      { icone: "fa fa-home", valor: { ptBr: "Blumenau/SC", enUs: "Brazil" } },
-      { icone: "fa fa-envelope", valor: { ptBr: "jeanklann@gmail.com" } },
+      { icone: "fa fa-home", valor: { ptBr: "Blumenau/SC", enUs: "Brazil" }, link: "https://maps.app.goo.gl/AYtYW9KHB69RHaWA9" },
+      { icone: "fa fa-envelope", valor: { ptBr: "jeanklann@gmail.com" }, link: "mailto:jeanklann@gmail.com"},
       { icone: "fa fa-phone", valor: { ptBr: "(47) 99202-6836", enUs: "+55 (47) 99202-6836" } },
-      { icone: "fa-brands fa-linkedin", valor: { ptBr: "https://www.linkedin.com/in/jean-carlos-klann/" } },
-      { icone: "fa-brands fa-github", valor: { ptBr: "https://github.com/jeanklann" } },
+      { icone: "fa-brands fa-linkedin", valor: { ptBr: "https://www.linkedin.com/in/jean-carlos-klann/" }, link: "https://www.linkedin.com/in/jean-carlos-klann/" },
+      { icone: "fa-brands fa-github", valor: { ptBr: "https://github.com/jeanklann" }, link: "https://github.com/jeanklann" },
     ], 
     resumo: {ptBr: "Desenvolvedor Full Stack", enUs: "Full Stack Developer"},
     formacao: 
@@ -66,8 +66,8 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Desenvolvimento do módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais. Implementação de transmissão e sincronização multithreading.", 
-                enUs: "Development of the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates. Implementation of multithreading transmission and synchronization."
+                ptBr: "Desenvolvimento do módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
+                enUs: "Development of the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates as well of layout versioning using reflection. Implementation of multithreading transmission and synchronization."
               },
               {
                 ptBr: "Dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
@@ -86,8 +86,8 @@ export const DadosCurriculo : Curriculo = {
                 enUs: "Development and integration of a digital fingerprint reading system, using the BioMini SDK."
               },
               {
-                ptBr: "Implementação de arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN.", 
-                enUs: "Implementation of CNAB credit files for integration with banks, using the FEBRABAN standard."
+                ptBr: "Implementação de arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial (BEm.)", 
+                enUs: "Implementation of CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit (BEm)."
               },
             ],
           },
@@ -190,7 +190,7 @@ export const DadosCurriculo : Curriculo = {
       { lingua: {ptBr: "Inglês", enUs: "English"}, texto: {ptBr: "Compreende bem, lê bem, escreve bem e fala razoavelmente", enUs: "Can read, write, and speak"}},
     ],
     dataNascimento: new Date(1993, 3 - 1),
-    totalLinhas: {ptBr: 71, enUs: 70}, 
+    totalLinhas: {ptBr: 72, enUs: 71}, 
 };
 
 export const PalavrasPadroes : Palavras = {

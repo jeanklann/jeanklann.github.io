@@ -79,10 +79,10 @@ function CurriculoClassico() {
             <Switch 
                 onChange={toggleNightMode} 
                 checked={nightMode} 
-                onColor='#cc0' 
+                onColor='#d33e15' 
                 offColor='#111120'
-                checkedIcon={<i className="switch-icon fa-solid fa-sun"></i>}
-                uncheckedIcon={<i className="switch-icon fa-solid fa-moon"></i>}
+                checkedIcon={<i className="switch-icon fa-solid fa-sun" style={{color: '#fff'}}></i>}
+                uncheckedIcon={<i className="switch-icon fa-solid fa-moon" style={{color: '#fff'}}></i>}
                 />
           </div>
           
@@ -90,8 +90,8 @@ function CurriculoClassico() {
             <Switch 
                 onChange={toggleLanguage} 
                 checked={languageBool}
-                onColor='#711' 
-                offColor='#151'
+                onColor='#d33e15' 
+                offColor='#0c5361'
                 checkedIcon={<span className='switch-icon switch-icon-mini' style={{color: '#ccc'}}>EN</span>}
                 uncheckedIcon={<span className='switch-icon switch-icon-mini' style={{color: '#ccc'}}>PT</span>}
                 />

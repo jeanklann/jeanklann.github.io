@@ -1,6 +1,7 @@
 export type Contato = {
   icone: string;                           //Ex.: "fa fa-envelope"
   valor: Texto;                            //Ex.: "jeanklann@gmail.com"
+  link?: string;                           //Ex.: "mailto:jeanklann@gmail.com"
 };
 
 export type Periodo = {

@@ -19,7 +19,13 @@ const Contatos = (props:ContatosProps) => {
         {props.dados.contatos.map((contato, index) => (
             <div key={index} className='contato'>
             <i className={contato.icone}></i>
-            <span className='valor'> {getTextHidden(props.language, contato.valor)}</span>
+            {contato.link ? (
+                <a href={contato.link} target="_blank">
+                    <span className='valor'> {getTextHidden(props.language, contato.valor)}</span>
+                </a>
+            ) : (
+                <span className='valor'> {getTextHidden(props.language, contato.valor)}</span>
+            )}
             </div>
         ))}
     </div>

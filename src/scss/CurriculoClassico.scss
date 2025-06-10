@@ -129,6 +129,17 @@
 .curriculo-classico .contatos{
   padding-left: 0px;
 }
+
+.curriculo-classico .contatos a{
+  color: var(--color-default);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.curriculo-classico .contatos a:hover{
+  color: var(--color-primary);
+}
+
 .curriculo-classico .titulo .nome {
   font-size: 2em;
   font-weight: bold;
