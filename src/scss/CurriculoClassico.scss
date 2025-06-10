@@ -29,12 +29,18 @@
 }
 
 @media print {
+  
+  body {
+    background-color: white !important;
+  }
+
   .curriculo-classico-container {
     position: relative;
     top: 0px;
     width: auto;
   }
   .curriculo-classico {
+    background-color: white;
     position: relative;
     top: 0px;
     left: 0;
@@ -44,7 +50,11 @@
     min-height: calc(100vh - 100px);
     margin-left: auto;
     box-shadow: none;
-    }
+  }
+  
+  .night .curriculo-classico {
+    background-color: var(--color-background);
+  }
 
   .night .curriculo-classico {
     box-shadow: none;
