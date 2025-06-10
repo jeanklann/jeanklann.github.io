@@ -22,6 +22,7 @@
  min-height: 100%;
  margin-left: calc(50% - 900px/2);
  box-shadow: #333 0px 0px 10px;
+ text-align: justify;
 }
 .night .curriculo-classico {
   box-shadow: #000 0px 0px 10px;
@@ -56,7 +57,7 @@
 .curriculo-classico .menu {
  position: absolute;
  top: 10px;
- right: 20px;
+ right: 25px;
  width: 600px;
  float: right;
 }
@@ -195,9 +196,10 @@
 }
 .curriculo-classico .col3
 {
+  font-size: 1em;
   position: absolute;
   left: 60%;
-  width: 40%;
+  width: 340px;
 }
 .curriculo-classico .experiencia .habilidades .habilidade-item{
   font-size: .8em;
@@ -214,6 +216,7 @@
 
 .curriculo-classico .projetos {
   margin-top: 7px;
+  margin-right: 0px;
 }
 
 .curriculo-classico .projetos .titulo {
