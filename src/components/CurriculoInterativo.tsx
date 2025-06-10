@@ -92,6 +92,7 @@ function CurriculoInterativo() {
           <h2>{getText(language, PalavrasPadroes.experiencia)}</h2>
           {DadosCurriculo.experienciaProfissional.map((experiencia, index) => (
             <div key={index} className='experiencia-item'>
+              {experiencia.imagem ? (<img src={experiencia.imagem[0]} style={{position: 'relative'}} />) : null}
               <h3>{experiencia.nomeEmpresa}</h3>
               {experiencia.cargos.map((cargo, idx) => (
                 <div key={idx} className='cargo-item'>

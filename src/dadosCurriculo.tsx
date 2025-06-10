@@ -1,4 +1,11 @@
 import type {Curriculo, Palavras} from './tipos.tsx';
+import weg01 from './assets/weg-01.jpg';
+import weg02 from './assets/weg-02.jpg';
+import benner01 from './assets/benner-01.jpeg';
+import senai01 from './assets/senai-01.jpg';
+import bennerLogo from './assets/benner-logo.png';
+import senaiLogo from './assets/senai-logo.png';
+import wegLogo from './assets/weg-logo.png';
 
 export const DadosCurriculo : Curriculo = {
     nome: "Jean Carlos Klann",
@@ -50,14 +57,38 @@ export const DadosCurriculo : Curriculo = {
             descricao: {ptBr: "Desenvolvedor de sistema RH, voltado para WEB, utilizando C# e .NET. Desenvolvimento de APIs RESTful, integração com sistemas legados e manutenção de sistemas existentes.", enUs: "Developer of HR systems for the web, using C# and .NET. Development of RESTful APIs, integration with legacy systems, and maintenance of existing systems."},
             habilidades: 
             [
-                { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["C#", "Delphi", "VBA", "Python", "JavaScript"] },
+                { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["C#", "Delphi", "VBA", "Python", "JavaScript", "HTML", "CSS"] },
                 { nome: {ptBr: "SGBDs", enUs: "DBs"}, valores: ["MSSQL Server", "Oracle", "PostgreSQL"] },
                 { nome: {ptBr: "Frameworks"}, valores: [".NET", "ASP.NET"] },
                 { nome: {ptBr: "Ferramentas", enUs: "Tools"}, valores: ["Git", "Visual Studio"] },
                 { nome: {ptBr: "Metodologias", enUs: "Methodologies"}, valores: ["Scrum"] },
             ],
+            projetos: [
+              {
+                ptBr: "Desenvolvimento do módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais. Implementação de transmissão e sincronização multithreading.", 
+                enUs: "Development of the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates. Implementation of multithreading transmission and synchronization."
+              },
+              {
+                ptBr: "Dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
+                enUs: "Dashboards of human resources indicator panels, using AMCharts."
+              },
+              {
+                ptBr: "Integração entre sistemas utilizando APIs RESTful (gestão eletronica de documentos, integração financeira) e desenvolvimento de APIs RESTful para outros sistemas consumirem.", 
+                enUs: "System integration using RESTful APIs (electronic document management, financial integration) and development of RESTful APIs for external system consumption."
+              },
+              {
+                ptBr: "Desenvolvimento de relatórios utilizando Stimulsoft Reports.",
+                enUs: "Report development using Stimulsoft Reports."
+              },
+              {
+                ptBr: "Desenvolvimento e integração de sistema de leitura de biometria digital, utilizando o SDK da BioMini.", 
+                enUs: "Development and integration of a digital fingerprint reading system, using the BioMini SDK."
+              },
+            ],
           },
         ],
+        logo: bennerLogo,
+        imagem: [benner01],
       },
       {
         nomeEmpresa: "SENAI",
@@ -69,14 +100,33 @@ export const DadosCurriculo : Curriculo = {
               inicio: new Date(2012, 3 - 1), 
               fim: new Date(2017, 6 - 1)
             },
-            descricao: {ptBr: "Desenvolvimento de games, cursos EaD, animações 2D, 3D, Programação de sistemas e diagramação de livros didáticos", enUs: "Development of games, e-learning courses, 2D and 3D animations, system programming, and layout design for textbooks."},
+            descricao: {
+              ptBr: "Desenvolvimento de games, cursos EaD, animações 2D, 3D, programação de sistemas e diagramação de livros didáticos. Também lecionado aulas de Flash com ActionScript 3.0.", 
+              enUs: "Development of games, e-learning courses, 2D and 3D animations, system programming, and layout design for textbooks. Also taught classes in Flash with ActionScript 3.0."
+            },
             habilidades: 
             [
-                { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["Java", "C#", "JavaScript", "ActionScript"] },
+                { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["Java", "C#", "JavaScript", "ActionScript", "HTML", "CSS"] },
                 { nome: {ptBr: "Ferramentas", enUs: "Tools"}, valores: ["NetBeans", "Blender", "Unity3D", "Adobe CS"] },
+            ],
+            projetos: [
+              {
+                ptBr: "Desenvolvimento de jogos utilizando Unity3D, C# e Blender.",
+                enUs: "Game development using Unity3D, C#, and Blender."
+              },
+              {
+                ptBr: "Desenvolvimento de cursos EaD utilizando SCORM, JavaScript e HTML, assim como as animações em 2D e 3D.",
+                enUs: "Development of e-learning courses using SCORM, JavaScript, and HTML, as well as 2D and 3D animations."
+              },
+              {
+                ptBr: "Acionamento, monitoramento e controle remoto de motores, servomotores, inversores de frequencia, e CLPs através do protocolo Modbus.",
+                enUs: "Remote activation, monitoring, and control of motors, servomotors, frequency inverters, and PLCs using the Modbus protocol."
+              },
             ],
           },
         ],
+        logo: senaiLogo,
+        imagem: [senai01],
       },
       {
         nomeEmpresa: "WEG",
@@ -105,14 +155,22 @@ export const DadosCurriculo : Curriculo = {
             [
                 { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["Assembly", "Pascal", "Ladder"] },
             ],
+            projetos: [
+              {
+                ptBr: "Programação de microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores. Também feito uma calculadora utilizando o microcontrolador.",
+                enUs: "Programming of microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors. Also created a calculator using the microcontroller."
+              },
+            ],
           },
         ],
+        logo: wegLogo,
+        imagem: [weg01, weg02],
       },
     ],
     experienciaProfissionalAdicional:
     [
       {
-        nomeEmpresa: "Cetelbras",
+        nomeEmpresa: "Cetelbras/SaibaJá",
         titulo: {ptBr: "Professor de desenvolvimento de jogos", enUs: "Game Development Teacher"},
         descricao: {ptBr: "Professor de desenvolvimento de jogos, utilizando Portugol Studio, Unity3D e C#.", enUs: "Game development teacher, using Portugol Studio, Unity3D and C#."},
         periodo: {
@@ -127,7 +185,7 @@ export const DadosCurriculo : Curriculo = {
       { lingua: {ptBr: "Inglês", enUs: "English"}, texto: {ptBr: "Compreende bem, lê bem, escreve bem e fala razoavelmente", enUs: "Can read, write, and speak"}},
     ],
     dataNascimento: new Date(1993, 3 - 1),
-    totalLinhas: {ptBr: 56, enUs: 55}, 
+    totalLinhas: {ptBr: 71, enUs: 70}, 
 };
 
 export const PalavrasPadroes : Palavras = {
@@ -137,4 +195,5 @@ export const PalavrasPadroes : Palavras = {
   experienciaAdicional: {ptBr: "experiênciaProfissionalAdicional", enUs: "additionalProfessionalExperience"},
   idiomas: {ptBr: "idiomas", enUs: "languages"},
   atual: {ptBr: "Atual", enUs: "Current"},
+  projetos: {ptBr: "projetos", enUs: "projects"},
 }

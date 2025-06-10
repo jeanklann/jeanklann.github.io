@@ -114,7 +114,7 @@
   font-weight: bold;
 }
 .curriculo-classico h2 {
-  padding-top: 1em;
+  padding-top: .5em;
   margin-bottom: 0em;
   font-size: 1.8em;
 }
@@ -122,7 +122,7 @@
   color: var(--color-secondary);
 }
 .curriculo-classico h3 {
-  padding-top: 2.5em;
+  padding-top: 1.5em;
   margin-bottom: -2.5em;
   font-size: 1em;
 }
@@ -198,5 +198,18 @@
 }
 
 .curriculo-classico .idiomas .idioma-item .fluencia {
+  font-size: .8em;
+}
+
+.curriculo-classico .projetos {
+  margin-top: 7px;
+}
+
+.curriculo-classico .projetos .titulo {
+  font-weight: bold;
+  color: var(--color-secondary)
+}
+.curriculo-classico .projetos .projeto-item {
+  margin-top: 7px;
   font-size: .8em;
 }

@@ -25,7 +25,9 @@ export type Habilidade = {
 
 export type ExperienciaProfissional = {
     nomeEmpresa: string;                   //Ex.: Benner Sistemas
-    cargos: Cargo[]
+    cargos: Cargo[],
+    imagem?: string[],                     //Ex.: "https://example.com/logo.png" (opcional)
+    logo?: string,                         //Ex.: "https://example.com/logo.png" (opcional)
 };
 export type ExperienciaProfissionalAdicional = {
     nomeEmpresa: string;                   //Ex.: Cetelbras
@@ -39,6 +41,7 @@ export type Cargo = {
     periodo: Periodo,
     descricao: Texto;                      //Ex.: Desenvolvimento de sistemas web
     habilidades: Habilidade[];             //Ex.: [JavaScript, TypeScript, C#, .NET]
+    projetos?: Texto[];                    //Ex.: ["Desenvolvido XXX", "Desenvolvido YYY"] (opcional)
 };
 
 export type Idioma = {
@@ -66,6 +69,7 @@ export type Palavras = {
   idiomas: Texto,
   atual: Texto,
   experienciaAdicional: Texto,
+  projetos: Texto,
 }
 
 export type Texto = {
