@@ -11,10 +11,11 @@ export const DadosCurriculo : Curriculo = {
     nome: "Jean Carlos Klann",
     contatos: 
     [
-      { icone: "fa fa-envelope", valor: "jeanklann@gmail.com" },
-      { icone: "fa fa-phone", valor: "+55 (47) 9****-****" },
-      { icone: "fa-brands fa-linkedin", valor: "https://www.linkedin.com/in/jean-carlos-klann/" },
-      { icone: "fa-brands fa-github", valor: "https://github.com/jeanklann" },
+      { icone: "fa fa-home", valor: { ptBr: "Blumenau/SC", enUs: "Brazil" } },
+      { icone: "fa fa-envelope", valor: { ptBr: "jeanklann@gmail.com" } },
+      { icone: "fa fa-phone", valor: { ptBr: "(47) 99202-6836", enUs: "+55 (47) 99202-6836" } },
+      { icone: "fa-brands fa-linkedin", valor: { ptBr: "https://www.linkedin.com/in/jean-carlos-klann/" } },
+      { icone: "fa-brands fa-github", valor: { ptBr: "https://github.com/jeanklann" } },
     ], 
     resumo: {ptBr: "Desenvolvedor Full Stack", enUs: "Full Stack Developer"},
     formacao: 
@@ -52,15 +53,15 @@ export const DadosCurriculo : Curriculo = {
         cargos: 
         [
           {
-            nome: {ptBr: "Programador", enUs: "Developer"},
+            nome: {ptBr: "Programador / TechLead", enUs: "Developer / TechLead"},
             periodo: {inicio: new Date(2017, 7 - 1)},
             descricao: {ptBr: "Desenvolvedor de sistema RH, voltado para WEB, utilizando C# e .NET. Desenvolvimento de APIs RESTful, integração com sistemas legados e manutenção de sistemas existentes.", enUs: "Developer of HR systems for the web, using C# and .NET. Development of RESTful APIs, integration with legacy systems, and maintenance of existing systems."},
             habilidades: 
             [
                 { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["C#", "Delphi", "VBA", "Python", "JavaScript", "HTML", "CSS"] },
                 { nome: {ptBr: "SGBDs", enUs: "DBs"}, valores: ["MSSQL Server", "Oracle", "PostgreSQL"] },
-                { nome: {ptBr: "Frameworks"}, valores: [".NET", "ASP.NET"] },
-                { nome: {ptBr: "Ferramentas", enUs: "Tools"}, valores: ["Git", "Visual Studio"] },
+                { nome: {ptBr: "Frameworks"}, valores: [".NET", "ASP.NET", "NUnit 3", "Ninject"] },
+                { nome: {ptBr: "Ferramentas", enUs: "Tools"}, valores: ["Git", "Visual Studio", "Jenkins", "Postman"] },
                 { nome: {ptBr: "Metodologias", enUs: "Methodologies"}, valores: ["Scrum"] },
             ],
             projetos: [
@@ -83,6 +84,10 @@ export const DadosCurriculo : Curriculo = {
               {
                 ptBr: "Desenvolvimento e integração de sistema de leitura de biometria digital, utilizando o SDK da BioMini.", 
                 enUs: "Development and integration of a digital fingerprint reading system, using the BioMini SDK."
+              },
+              {
+                ptBr: "Implementação de arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN.", 
+                enUs: "Implementation of CNAB credit files for integration with banks, using the FEBRABAN standard."
               },
             ],
           },
@@ -157,8 +162,8 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Programação de microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores. Também feito uma calculadora utilizando o microcontrolador.",
-                enUs: "Programming of microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors. Also created a calculator using the microcontroller."
+                ptBr: "Programação de microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores.",
+                enUs: "Programming of microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors."
               },
             ],
           },
@@ -175,7 +180,7 @@ export const DadosCurriculo : Curriculo = {
         descricao: {ptBr: "Professor de desenvolvimento de jogos, utilizando Portugol Studio, Unity3D e C#.", enUs: "Game development teacher, using Portugol Studio, Unity3D and C#."},
         periodo: {
           inicio: new Date(2018, 1 - 1),
-          fim: new Date(2020, 12 - 1),
+          fim: new Date(2019, 6 - 1),
         },
       },
     ],

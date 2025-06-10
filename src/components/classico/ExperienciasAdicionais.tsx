@@ -20,7 +20,7 @@ const ExperienciasAdicionais = (props: ExperienciasAdicionaisProps) => {
                         <div className='empresa'>{experiencia.nomeEmpresa}</div>
                     </div>
                     <div className='col-4'>
-                        <div className='periodo col-4 col2'>{formatPeriodo(props.language, experiencia.periodo)}</div>
+                        <div className='periodo col-4 col2'>{experiencia.periodo == null ? null : formatPeriodo(props.language, experiencia.periodo)}</div>
                     </div>
                     
                     <div className='descricao col-3 col3'>{getText(props.language, experiencia.descricao)}</div>

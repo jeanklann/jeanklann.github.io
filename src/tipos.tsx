@@ -1,6 +1,6 @@
 export type Contato = {
   icone: string;                           //Ex.: "fa fa-envelope"
-  valor: string;                           //Ex.: "jeanklann@gmail.com"
+  valor: Texto;                            //Ex.: "jeanklann@gmail.com"
 };
 
 export type Periodo = {
@@ -33,7 +33,7 @@ export type ExperienciaProfissionalAdicional = {
     nomeEmpresa: string;                   //Ex.: Cetelbras
     titulo: Texto;                         //Ex.: Professor  
     descricao: Texto;
-    periodo: Periodo;                      
+    periodo?: Periodo;                      
 };
 
 export type Cargo = {

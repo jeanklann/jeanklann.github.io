@@ -59,7 +59,7 @@ function CurriculoInterativo() {
             {DadosCurriculo.contatos.map((contato, index) => (
               <div key={index} className='contato-item'>
                 <i className={contato.icone}></i>
-                <span>{contato.valor}</span>
+                <span>{contato.valor.ptBr}</span>
               </div>
             ))}
           </div>

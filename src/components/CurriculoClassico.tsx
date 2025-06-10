@@ -119,10 +119,10 @@ function CurriculoClassico() {
               <Name dados={DadosCurriculo} language={language} />
             </div>
             <div className='col-7 row col2' style={{marginTop: '30px'}}>
-              <Contatos dados={DadosCurriculo} />
+              <Contatos dados={DadosCurriculo} language={language} />
               <div className='qrCode col-2'>
                 <QRCode 
-                  value={DadosCurriculo.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor}
+                  value={DadosCurriculo.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor.ptBr}
                   style={{maxHeight: '80px', maxWidth: '80px', marginBottom: '10px'}} />
               </div>
             </div>
