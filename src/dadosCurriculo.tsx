@@ -70,28 +70,28 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Desenvolvi o módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
+                ptBr: "Desenvolvido o módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
                 enUs: "Developed the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates as well of layout versioning using reflection. Implementation of multithreading transmission and synchronization."
               },
               {
-                ptBr: "Desenvolvi dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
-                enUs: "Developed dashboards of human resources indicator panels, using AMCharts."
+                ptBr: "Construído dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
+                enUs: "Built dashboards of human resources indicator panels, using AMCharts."
               },
               {
-                ptBr: "Implementei a integração entre sistemas utilizando APIs RESTful (gestão eletronica de documentos, integração financeira) e desenvolvimento de APIs RESTful para outros sistemas consumirem.", 
+                ptBr: "Implementado a integração entre sistemas utilizando APIs RESTful (gestão eletronica de documentos, integração financeira) e desenvolvimento de APIs RESTful para outros sistemas consumirem.", 
                 enUs: "Implemented system integration using RESTful APIs (electronic document management, financial integration) and development of RESTful APIs for external system consumption."
               },
               {
-                ptBr: "Desenvolvi relatórios utilizando Stimulsoft Reports.",
-                enUs: "Report development using Stimulsoft Reports."
+                ptBr: "Desenvolvido relatórios utilizando Stimulsoft Reports.",
+                enUs: "Developed reports using Stimulsoft Reports."
               },
               {
-                ptBr: "Desenvolvi integrações de sistemas de leitura de biometria digital, utilizando o SDK da BioMini.", 
-                enUs: "Developed integrations of a digital fingerprint reading system, using the BioMini SDK."
+                ptBr: "Arquitetado e codificado integrações de sistemas de leitura de biometria digital, utilizando o SDK da BioMini.", 
+                enUs: "Architected and coded integrations of a digital fingerprint reading system, using the BioMini SDK."
               },
               {
-                ptBr: "Implementei arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial (BEm.)", 
-                enUs: "Implemented CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit (BEm)."
+                ptBr: "Refinado e aperfeiçoado arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial (BEm.)", 
+                enUs: "Refined and perfected CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit (BEm)."
               },
             ],
           },
@@ -110,8 +110,8 @@ export const DadosCurriculo : Curriculo = {
               fim: new Date(2017, 6 - 1)
             },
             descricao: {
-              ptBr: "Desenvolvi games, cursos EaD, animações 2D, 3D, programação de sistemas e diagramação de livros didáticos. Também lecionado aulas de Flash com ActionScript 3.0.", 
-              enUs: "Developed games, e-learning courses, 2D and 3D animations, system programming, and layout design for textbooks. Also taught classes in Flash with ActionScript 3.0."
+              ptBr: "Desenvolvimento de jogos digitais, cursos EaD, animações 2D, 3D, programação de sistemas e diagramação de livros didáticos. Também lecionado aulas de Flash com ActionScript 3.0.", 
+              enUs: "Development of digital games, e-learning courses, 2D and 3D animations, system programming, and layout design for textbooks. Also taught classes in Flash with ActionScript 3.0."
             },
             habilidades: 
             [
@@ -120,16 +120,16 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Desenvolvi jogos digitais utilizando Unity3D, C# e Blender.",
-                enUs: "Developes digital games using Unity3D, C#, and Blender."
+                ptBr: "Desenvolvido jogos digitais utilizando Unity3D, C# e Blender.",
+                enUs: "Developed digital games using Unity3D, C#, and Blender."
               },
               {
-                ptBr: "Desenvolvi de cursos EaD utilizando SCORM, JavaScript e HTML, assim como as animações em 2D e 3D.",
-                enUs: "Developed of e-learning courses using SCORM, JavaScript, and HTML, as well as 2D and 3D animations."
+                ptBr: "Construído cursos EaD utilizando SCORM, JavaScript e HTML, assim como as animações em 2D e 3D.",
+                enUs: "Built e-learning courses using SCORM, JavaScript, and HTML, as well as 2D and 3D animations."
               },
               {
-                ptBr: "Desenvolvi acionamentos, monitoramentos e controle remoto de motores, servomotores, inversores de frequencia, e CLPs através do protocolo Modbus.",
-                enUs: "Developed remote activations, monitoring, and control of motors, servomotors, frequency inverters, and PLCs using the Modbus protocol."
+                ptBr: "Modelado e codificado acionamentos, monitoramentos e controle remoto de motores, servomotores, inversores de frequencia, e CLPs através do protocolo Modbus.",
+                enUs: "Modeled and coded remote activations, monitoring, and control of motors, servomotors, frequency inverters, and PLCs using the Modbus protocol."
               },
             ],
           },
@@ -166,8 +166,8 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Programei microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores.",
-                enUs: "Programmed microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors."
+                ptBr: "Codificado microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores.",
+                enUs: "Coded microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors."
               },
             ],
           },
@@ -194,7 +194,7 @@ export const DadosCurriculo : Curriculo = {
       { lingua: {ptBr: "Inglês", enUs: "English"}, texto: {ptBr: "Compreende bem, lê bem, escreve bem e fala razoavelmente", enUs: "Can read, write, and speak"}},
     ],
     dataNascimento: new Date(1993, 3 - 1),
-    totalLinhas: {ptBr: 75, enUs: 71}, 
+    totalLinhas: {ptBr: 74, enUs: 70}, 
 };
 
 export const PalavrasPadroes : Palavras = {
