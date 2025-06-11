@@ -18,6 +18,10 @@ export const DadosCurriculo : Curriculo = {
       { icone: "fa-brands fa-github", valor: { ptBr: "https://github.com/jeanklann" }, link: "https://github.com/jeanklann" },
     ], 
     resumo: {ptBr: "Desenvolvedor Full Stack", enUs: "Full Stack Developer"},
+    resumoMaior: {
+      ptBr: "Profissional com mais de 10 anos de experiência em desenvolvimento de sistemas e liderança técnica. Especializado em C# e .NET para aplicações corporativas, com forte atuação em integrações com APIs, desenvolvimento web e sistemas governamentais (eSocial, CNAB, DIRF). Experiência como educador e desenvolvedor de jogos, com conhecimentos em eletrônica e automação.", 
+      enUs: "Professional with over 10 years of experience in system development and technical leadership. Specialized in C# and .NET for corporate applications, with a strong focus on API integrations, web development, and government systems (eSocial, CNAB, DIRF). Experience as an educator and game developer, with knowledge in electronics and automation."
+    },
     formacao: 
     [
       {
@@ -66,28 +70,28 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Desenvolvimento do módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
-                enUs: "Development of the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates as well of layout versioning using reflection. Implementation of multithreading transmission and synchronization."
+                ptBr: "Desenvolvi o módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
+                enUs: "Developed the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates as well of layout versioning using reflection. Implementation of multithreading transmission and synchronization."
               },
               {
-                ptBr: "Dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
-                enUs: "Dashboards of human resources indicator panels, using AMCharts."
+                ptBr: "Desenvolvi dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
+                enUs: "Developed dashboards of human resources indicator panels, using AMCharts."
               },
               {
-                ptBr: "Integração entre sistemas utilizando APIs RESTful (gestão eletronica de documentos, integração financeira) e desenvolvimento de APIs RESTful para outros sistemas consumirem.", 
-                enUs: "System integration using RESTful APIs (electronic document management, financial integration) and development of RESTful APIs for external system consumption."
+                ptBr: "Implementei a integração entre sistemas utilizando APIs RESTful (gestão eletronica de documentos, integração financeira) e desenvolvimento de APIs RESTful para outros sistemas consumirem.", 
+                enUs: "Implemented system integration using RESTful APIs (electronic document management, financial integration) and development of RESTful APIs for external system consumption."
               },
               {
-                ptBr: "Desenvolvimento de relatórios utilizando Stimulsoft Reports.",
+                ptBr: "Desenvolvi relatórios utilizando Stimulsoft Reports.",
                 enUs: "Report development using Stimulsoft Reports."
               },
               {
-                ptBr: "Desenvolvimento e integração de sistema de leitura de biometria digital, utilizando o SDK da BioMini.", 
-                enUs: "Development and integration of a digital fingerprint reading system, using the BioMini SDK."
+                ptBr: "Desenvolvi integrações de sistemas de leitura de biometria digital, utilizando o SDK da BioMini.", 
+                enUs: "Developed integrations of a digital fingerprint reading system, using the BioMini SDK."
               },
               {
-                ptBr: "Implementação de arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial (BEm.)", 
-                enUs: "Implementation of CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit (BEm)."
+                ptBr: "Implementei arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial (BEm.)", 
+                enUs: "Implemented CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit (BEm)."
               },
             ],
           },
@@ -106,8 +110,8 @@ export const DadosCurriculo : Curriculo = {
               fim: new Date(2017, 6 - 1)
             },
             descricao: {
-              ptBr: "Desenvolvimento de games, cursos EaD, animações 2D, 3D, programação de sistemas e diagramação de livros didáticos. Também lecionado aulas de Flash com ActionScript 3.0.", 
-              enUs: "Development of games, e-learning courses, 2D and 3D animations, system programming, and layout design for textbooks. Also taught classes in Flash with ActionScript 3.0."
+              ptBr: "Desenvolvi games, cursos EaD, animações 2D, 3D, programação de sistemas e diagramação de livros didáticos. Também lecionado aulas de Flash com ActionScript 3.0.", 
+              enUs: "Developed games, e-learning courses, 2D and 3D animations, system programming, and layout design for textbooks. Also taught classes in Flash with ActionScript 3.0."
             },
             habilidades: 
             [
@@ -116,16 +120,16 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Desenvolvimento de jogos utilizando Unity3D, C# e Blender.",
-                enUs: "Game development using Unity3D, C#, and Blender."
+                ptBr: "Desenvolvi jogos digitais utilizando Unity3D, C# e Blender.",
+                enUs: "Developes digital games using Unity3D, C#, and Blender."
               },
               {
-                ptBr: "Desenvolvimento de cursos EaD utilizando SCORM, JavaScript e HTML, assim como as animações em 2D e 3D.",
-                enUs: "Development of e-learning courses using SCORM, JavaScript, and HTML, as well as 2D and 3D animations."
+                ptBr: "Desenvolvi de cursos EaD utilizando SCORM, JavaScript e HTML, assim como as animações em 2D e 3D.",
+                enUs: "Developed of e-learning courses using SCORM, JavaScript, and HTML, as well as 2D and 3D animations."
               },
               {
-                ptBr: "Acionamento, monitoramento e controle remoto de motores, servomotores, inversores de frequencia, e CLPs através do protocolo Modbus.",
-                enUs: "Remote activation, monitoring, and control of motors, servomotors, frequency inverters, and PLCs using the Modbus protocol."
+                ptBr: "Desenvolvi acionamentos, monitoramentos e controle remoto de motores, servomotores, inversores de frequencia, e CLPs através do protocolo Modbus.",
+                enUs: "Developed remote activations, monitoring, and control of motors, servomotors, frequency inverters, and PLCs using the Modbus protocol."
               },
             ],
           },
@@ -162,8 +166,8 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Programação de microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores.",
-                enUs: "Programming of microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors."
+                ptBr: "Programei microcontroladores Intel 8031, 8051 e PICs para controlar matriz de LEDs, displays de 7 segmentos, motores e servomotores.",
+                enUs: "Programmed microcontrollers Intel 8031, 8051, and PICs to control LED matrices, 7-segment displays, motors, and servomotors."
               },
             ],
           },
@@ -190,7 +194,7 @@ export const DadosCurriculo : Curriculo = {
       { lingua: {ptBr: "Inglês", enUs: "English"}, texto: {ptBr: "Compreende bem, lê bem, escreve bem e fala razoavelmente", enUs: "Can read, write, and speak"}},
     ],
     dataNascimento: new Date(1993, 3 - 1),
-    totalLinhas: {ptBr: 73, enUs: 71}, 
+    totalLinhas: {ptBr: 75, enUs: 71}, 
 };
 
 export const PalavrasPadroes : Palavras = {

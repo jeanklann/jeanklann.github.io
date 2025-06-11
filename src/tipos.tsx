@@ -54,6 +54,7 @@ export type Curriculo = {
     nome: string,                           //Ex.: Jean Carlos Klann  
     contatos: Contato[],         
     resumo: Texto,                          //Ex.: "Desenvolvedor Full Stack com 7 anos de experiência em desenvolvimento de sistemas web."
+    resumoMaior: Texto,
     formacao: Formacao[],        
     cursos: Curso[],
     experienciaProfissional: ExperienciaProfissional[],

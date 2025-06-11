@@ -13,6 +13,7 @@ import Formacao from './classico/Formacao.tsx';
 import Experiencias from './classico/Experiencias.tsx';
 import ExperienciasAdicionais from './classico/ExperienciasAdicionais.tsx';
 import Idiomas from './classico/Idiomas.tsx';
+import { getText } from '../Functions.tsx';
 
 function CurriculoClassico() {
   let params = new URLSearchParams(document.location.search);
@@ -125,6 +126,11 @@ function CurriculoClassico() {
                   value={DadosCurriculo.contatos.filter(x => x.icone == "fa-brands fa-github")[0].valor.ptBr}
                   style={{maxHeight: '80px', maxWidth: '80px', marginBottom: '10px'}} />
               </div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='resumo-maior col-12'>
+              {getText(language, DadosCurriculo.resumoMaior)}
             </div>
           </div>
           <Formacao dados={DadosCurriculo} language={language} palavras={PalavrasPadroes} />

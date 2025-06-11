@@ -125,7 +125,7 @@
   font-weight: bold;
 }
 .curriculo-classico h2 {
-  padding-top: .5em;
+  padding-top: 0em;
   margin-bottom: 0em;
   font-size: 1.8em;
 }
@@ -240,4 +240,11 @@
 .curriculo-classico .projetos .projeto-item {
   margin-top: 7px;
   font-size: .8em;
+}
+
+.curriculo-classico .resumo-maior{
+  margin-top: 10px;
+  width: 850px;
+  font-size: .9em;
+  padding-bottom: 10px;
 }
