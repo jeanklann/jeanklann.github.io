@@ -1,5 +1,6 @@
 export type Contato = {
   icone: string;                           //Ex.: "fa fa-envelope"
+  nome: Texto;                             //Ex.: "E-mail"
   valor: Texto;                            //Ex.: "jeanklann@gmail.com"
   link?: string;                           //Ex.: "mailto:jeanklann@gmail.com"
 };
@@ -49,12 +50,22 @@ export type Idioma = {
     lingua: Texto;                         //Ex.: Portugues
     texto: Texto;                          //Ex.: Nativo
 };
-
+export type HabilidadeTecnicaCategoria = {
+    nome: Texto;                              //Ex.: Linguagens
+    habilidades: HabilidadeTecnicaPercentual[];
+}
+export type HabilidadeTecnicaPercentual = {
+    nome: Texto;                           //Ex.: JavaScript
+    percentual: number;                    //Ex.: 80
+}
 export type Curriculo = {
     nome: string,                           //Ex.: Jean Carlos Klann  
     contatos: Contato[],         
     resumo: Texto,                          //Ex.: "Desenvolvedor Full Stack com 7 anos de experiência em desenvolvimento de sistemas web."
+    resumoMenor: Texto,
     resumoMaior: Texto,
+    coverLetterTexto: Texto,
+
     formacao: Formacao[],        
     cursos: Curso[],
     experienciaProfissional: ExperienciaProfissional[],
@@ -62,6 +73,8 @@ export type Curriculo = {
     idiomas: Idioma[],
     dataNascimento: Date | undefined,       //Ex.: new Date(1993, 11, 01),
     totalLinhas: LinhasPorLingua,           //Ex.: 50 - Utilizado para o currículo clássico
+    totalLinhasCover: LinhasPorLingua,      //Ex.: 50 - Utilizado para o currículo clássico
+    habilidadesTecnicas: HabilidadeTecnicaCategoria[], //Ex.: [{nome: "JavaScript", percentual: 80}, {nome: "TypeScript", percentual: 70}]
 }
 
 export type Palavras = {
@@ -72,6 +85,13 @@ export type Palavras = {
   atual: Texto,
   experienciaAdicional: Texto,
   projetos: Texto,
+  inicioMenu: Texto,
+  sobreMenu: Texto,
+  experienciaMenu: Texto,
+  habilidadesMenu: Texto,
+  formacaoMenu: Texto,
+  projetosMenu: Texto,
+  contatoMenu: Texto,
 }
 
 export type Texto = {
