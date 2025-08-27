@@ -16,12 +16,12 @@ const Navigation = (props: Props) => {
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
-    { id: 'hero', label: props.palavras.inicioMenu[props.language], icon: Home },
-    { id: 'about', label: props.palavras.sobreMenu[props.language], icon: User },
-    { id: 'experience', label: props.palavras.experienciaMenu[props.language], icon: Briefcase },
-    { id: 'skills', label: props.palavras.habilidadesMenu[props.language], icon: Code },
-  /*  { id: 'projects', label: props.palavras.projetosMenu[props.language], icon: FolderOpen }, */
-    { id: 'contact', label: props.palavras.contatoMenu[props.language], icon: Mail }
+    { id: 'hero', label: props.palavras.inicioMenu[props.language]?.split(" ")[0], icon: Home },
+    { id: 'about', label: props.palavras.sobreMenu[props.language]?.split(" ")[0], icon: User },
+    { id: 'experience', label: props.palavras.experienciaMenu[props.language]?.split(" ")[0], icon: Briefcase },
+    { id: 'skills', label: props.palavras.habilidadesMenu[props.language]?.split(" ")[0], icon: Code },
+  /*  { id: 'projects', label: props.palavras.projetosMenu[props.language]?.split(" ")[0], icon: FolderOpen }, */
+    { id: 'contact', label: props.palavras.contatoMenu[props.language]?.split(" ")[0], icon: Mail }
   ];
 
   useEffect(() => {

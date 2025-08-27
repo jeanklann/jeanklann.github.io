@@ -92,6 +92,19 @@ export type Palavras = {
   formacaoMenu: Texto,
   projetosMenu: Texto,
   contatoMenu: Texto,
+  habilidadesTecnicasTexto: Texto,
+  frontEnd: Texto,
+  backEnd: Texto,
+  database: Texto
+  devops: Texto,
+  roleParaBaixo: Texto,
+  frontEndDevelopment: Texto,
+  backEndDevelopment: Texto,
+  experienciaProfissionalTexto: Texto,
+  informacoesDeContato: Texto,
+  redesSociais: Texto,
+  anosDeExperiencia: Texto,
+  horasDeDesenvolvimento: Texto,
 }
 
 export type Texto = {

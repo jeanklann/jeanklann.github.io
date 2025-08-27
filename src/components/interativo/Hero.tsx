@@ -124,7 +124,7 @@ const Hero = (props: Props) => {
           onClick={scrollToAbout}
         >
           <div className="flex flex-col items-center text-white/70 hover:text-white transition-colors">
-            <span className="text-sm mb-2">Role para baixo</span>
+            <span className="text-sm mb-2">{props.palavras.roleParaBaixo[props.language]}</span>
             <ChevronDown className="w-6 h-6 animate-bounce" />
           </div>
         </motion.div>

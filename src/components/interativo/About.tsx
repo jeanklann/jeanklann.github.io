@@ -103,12 +103,12 @@ const About = (props: Props) => {
             {/* Stats */}
             <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">50+</div>
-                <div className="text-slate-600 dark:text-slate-300">Projetos Concluídos</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">10.000+</div>
+                <div className="text-slate-600 dark:text-slate-300">{props.palavras.horasDeDesenvolvimento[props.language]}</div>
               </div>
               <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-xl shadow-lg">
                 <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">10+</div>
-                <div className="text-slate-600 dark:text-slate-300">Anos de Experiência</div>
+                <div className="text-slate-600 dark:text-slate-300">{props.palavras.anosDeExperiencia[props.language]}</div>
               </div>
               <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-xl shadow-lg">
                 <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">30+</div>
