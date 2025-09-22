@@ -68,7 +68,11 @@ export const DadosCurriculo : Curriculo = {
           {
             nome: {ptBr: "Programador / TechLead", enUs: "Developer / TechLead"},
             periodo: {inicio: new Date(2017, 7 - 1)},
-            descricao: {ptBr: "Desenvolvedor de sistema RH, voltado para WEB, utilizando C# e .NET. Desenvolvimento de APIs RESTful, integração com sistemas legados e manutenção de sistemas existentes.", enUs: "Developer of HR systems for the web, using C# and .NET. Development of RESTful APIs, integration with legacy systems, and maintenance of existing systems."},
+            descricao: 
+            {
+              ptBr: "Desenvolvedor de sistema RH, voltado para WEB, utilizando C# e .NET. Desenvolvimento de APIs RESTful, integração com sistemas legados e manutenção de sistemas existentes.", 
+              enUs: "Developer of HR systems for the web, using C# and .NET. Development of RESTful APIs, integration with legacy systems, and maintenance of existing systems."
+            },
             habilidades: 
             [
                 { nome: {ptBr: "Linguagens", enUs: "Languages"}, valores: ["C#", "Delphi", "VBA", "Python", "JavaScript", "HTML", "CSS"] },
@@ -79,8 +83,8 @@ export const DadosCurriculo : Curriculo = {
             ],
             projetos: [
               {
-                ptBr: "Desenvolvido o módulo eSocial, em que observa todas as interações do sistema, valida, e as envia para API do eSocial no governo utilizando certificados digitais assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
-                enUs: "Developed the eSocial module, which monitors all system interactions, validates them, and sends them to the government's eSocial API using digital certificates as well of layout versioning using reflection. Implementation of multithreading transmission and synchronization."
+                ptBr: "Desenvolvido o módulo eSocial, observando todos os eventos do sistema, validando, e os envia para API do eSocial no governo utilizando certificados, assim como o versionamento dos leiautes utilizando reflection. Implementação de transmissão e sincronização multithreading.", 
+                enUs: "Developed the eSocial module, monitoring all system events, validates them, and sends them to the government's eSocial API using certificates, as well of layout versioning using reflection. Implementation of multithreading transmission and synchronization."
               },
               {
                 ptBr: "Construído dashboards de indicadores de recursos humanos, utilizando de AMCharts.", 
@@ -99,8 +103,12 @@ export const DadosCurriculo : Curriculo = {
                 enUs: "Architected and coded integrations of a digital fingerprint reading system, using the BioMini SDK."
               },
               {
-                ptBr: "Refinado e aperfeiçoado arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial (BEm.)", 
-                enUs: "Refined and perfected CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit (BEm)."
+                ptBr: "Refinado e aperfeiçoado arquivos de crédito CNAB para integração com bancos, utilizando o padrão FEBRABAN, assim como o desenvolvimento das rotinas e arquivos de declaração de imposto de renda retido na fonte (DIRF) e rotinas e geração do benefício emergencial", 
+                enUs: "Refined and perfected CNAB credit files for integration with banks, using the FEBRABAN standard, as well as the development of routines and files for income tax withheld at source (DIRF) declaration and routines and generation of the emergency benefit"
+              },
+              {
+                ptBr: "Gerenciado e mantido diversos clientes na nuvem da empresa, AWS EC2, Google Cloud e Azure.", 
+                enUs: "Managed and maintained various clients in the company's cloud, AWS EC2, Google Cloud, and Azure."
               },
             ],
           },
@@ -226,7 +234,7 @@ export const DadosCurriculo : Curriculo = {
       ]},
     ],
     dataNascimento: new Date(1993, 3 - 1),
-    totalLinhas: {ptBr: 75, enUs: 71}, 
+    totalLinhas: {ptBr: 75, enUs: 72}, 
     totalLinhasCover: {ptBr: 42, enUs: 39}, 
 };
 
