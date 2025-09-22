@@ -8,8 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-#dist folder must be public to works in github pages
-#dist
+dist
 dist-ssr
 *.local
 
