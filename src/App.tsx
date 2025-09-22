@@ -4,7 +4,7 @@ import CurriculoClassicoCoverLetter from './components/CurriculoClassicoCoverLet
 
 const App = () => {
     let params = new URLSearchParams(document.location.search);
-    let modo = params.get("modo") ?? "interativo";
+    let modo = params.get("modo") ?? "classico";
     if (modo === "classico") {
         return (
             <CurriculoClassico />

@@ -105,6 +105,8 @@ export type Palavras = {
   redesSociais: Texto,
   anosDeExperiencia: Texto,
   horasDeDesenvolvimento: Texto,
+  voltar: Texto,
+  imprimir: Texto,
 }
 
 export type Texto = {

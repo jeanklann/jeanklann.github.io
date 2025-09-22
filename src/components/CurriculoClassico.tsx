@@ -100,15 +100,16 @@ function CurriculoClassico() {
 
           <div className='menu-item'>
             <button onClick={handlePrint}>
-              Imprimir / Baixar
+              {getText(language, PalavrasPadroes.imprimir)}
             </button>
           </div>
-
+          {/*
           <div className='menu-item'>
             <button onClick={handleBack}>
-              Voltar
+              {getText(language, PalavrasPadroes.voltar)}
             </button>
           </div>
+          */}
         </div>
         <div ref={linhasRef} className='curriculo-classico-linhas'>
           { getLines() }

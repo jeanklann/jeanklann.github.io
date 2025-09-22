@@ -266,4 +266,6 @@ export const PalavrasPadroes : Palavras = {
   redesSociais: {ptBr: "Redes Sociais", enUs: "Social Media"},
   anosDeExperiencia: {ptBr: "Anos de Experiência", enUs: "Years of Experience"},
   horasDeDesenvolvimento: {ptBr: "Horas de Desenvolvimento", enUs: "Development Hours"},
+  voltar: {ptBr: "Voltar", enUs: "Back"},
+  imprimir: {ptBr: "Imprimir / Baixar", enUs: "Print / Download"},
 }
